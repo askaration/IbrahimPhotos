@@ -1,0 +1,104 @@
+/* importing fonts and characters from google */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Fredericka+the+Great&family=Monoton&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Inconsolata&family=Lalezar&family=Orbitron:wght@400;500&display=swap');
+
+/* align-items: center; */
+
+/* setting a background */
+*{
+  background-color:black;
+  
+}
+
+.main-menu{
+  padding: 0px 0px 19px 0px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.main-menu > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+/* the home link */
+.main-menu > li:nth-of-type(1){
+  font-family:'Cabin Sketch', cursive;
+  text-align: center;
+  font-size: 27px;
+  left: 0;
+  padding: 0px 0px 0px 50px;
+}
+/* cv link */
+.main-menu > li:nth-of-type(2){
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  left: 45%;
+  
+  
+  
+}
+.main-menu > li:nth-of-type(3){
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  left: 50%;
+  
+}
+
+
+
+.main-menu > li{
+  display: inline-block;
+  position: relative;
+  top: 18px;
+}
+/*  making a grid */
+.image-list > img{
+  width: 33%;
+  position: static;
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  transition: width 3s, height 3s, transform 3s;
+}
+
+.image-list > img:hover {
+  position: relative;
+  z-index: 100;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transform: rotate(360deg);
+}
+
+/* copyright statement */
+.copr{
+  padding: 15px 0px 50px 0px;
+  background-color: grey;
+  text-align: center;
+  color: black;
+  display: block;
+}
+
+/* making it responsive */
+@media all and  (max-width: 800px) {
+  
+/*   responsive main menu */
+  .main-menu{
+    display: block;
+    position: relative;
+  }
+  
+  .main-menu > li:nth-of-type(1){
+    position: static;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+  
+/*   responsive image list */
+  .image-list > img{
+  width: 80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
